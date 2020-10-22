@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{ed0b04a6-fecd-4a2c-a462-59a8f4639f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\modelData">
+      <UniqueIdentifier>{06086914-6aa4-4cad-9b07-6f9d357f04df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sprite">
+      <UniqueIdentifier>{a6ce300a-b532-440d-b914-b4661d3015ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sound">
+      <UniqueIdentifier>{1b7beb56-e3c5-46dc-a8a8-1c29478a1147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sprite\Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="background.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Gamecamera.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Target.cpp" />
+    <ClCompile Include="TargetGenerator.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Assets\sprite\Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="background.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Gamecamera.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Target.h" />
+    <ClInclude Include="TargetGenerator.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc">
+      <Filter>Assets\sprite\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Assets\modelData\unityChan.fbx">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\background.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\colt.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Target.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\R_target.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Bullet.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\maru.FBX" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\sprite\dummy.png">
+      <Filter>Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\title.png">
+      <Filter>Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\matoTarget.jpg">
+      <Filter>Assets\sprite\Resource Files</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\GAMECLEAR.png" />
+    <ImageContentTask Include="Assets\sprite\GAMEOVER.png" />
+    <ImageContentTask Include="Assets\sprite\dummy1.jpg">
+      <Filter>Assets\sprite\Resource Files</Filter>
+    </ImageContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\sprite\beniya.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\box.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\colt low.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Target.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Rtarget.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\main03.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\hasira.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\title.dds">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\metal_scratches_1.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\dirt_texture.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="..\..\..\Downloads\matoTarget.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Downloads\shot.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Downloads\gun.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
